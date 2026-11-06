@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gif-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.gif-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gif-container img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gif-container img:hover {
+    opacity: 0.6;
+  }
+  

@@ -1,0 +1,26 @@
+:root { --ink:#52301d; --paper:#eadcc7; --brown:#603723; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; font-family:Georgia, "Times New Roman", serif; color:var(--ink); background:linear-gradient(180deg,#efe2ce,#e4d2ba); }
+.menu-header { position:relative; display:flex; align-items:center; justify-content:center; gap:22px; min-height:150px; border-bottom:1px solid rgba(94,61,42,.28); text-align:center; padding:18px 120px; }
+.menu-header p { margin:0 0 5px; letter-spacing:.22em; text-transform:uppercase; font-size:13px; }
+.menu-header h1 { margin:0; font-size:58px; line-height:.9; font-style:italic; }
+.mini-cup { width:112px; height:78px; overflow:visible; }
+.mini-cup > path:first-child { fill:none; stroke:#79594a; stroke-width:3; stroke-linecap:round; }
+.mini-cup ellipse:first-of-type { fill:#5f3927; stroke:#4a3023; stroke-width:3; }
+.mini-cup-body { fill:#f5ead7; stroke:#6a4936; stroke-width:4; }
+.mini-cup-heart { fill:#9a654e; stroke:#76513d; stroke-width:1.5; }
+.mini-cup-handle { fill:none; stroke:#6a4936; stroke-width:7; stroke-linecap:round; }
+.mini-cup-saucer { fill:#d4b997; stroke:#6a4936; stroke-width:3; }
+.back-button { position:absolute; right:30px; top:58px; padding:12px 18px; border-radius:10px; color:white; text-decoration:none; background:var(--brown); font-weight:bold; box-shadow:0 5px 12px rgba(70,42,27,.16); }
+.menu-page { width:min(1120px,calc(100% - 36px)); margin:26px auto 90px; display:grid; gap:28px; }
+.menu-section { padding:22px 26px 26px; border:1px solid rgba(99,68,48,.22); border-radius:18px; background:rgba(255,250,242,.58); box-shadow:0 8px 22px rgba(83,54,36,.08); }
+.menu-section h2 { display:flex; align-items:center; gap:10px; margin:0 0 18px; font-size:30px; }
+.menu-section h2 span { font-size:18px; color:#b47a50; }
+.menu-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.menu-grid article { display:grid; grid-template-columns:52px 1fr auto; align-items:center; gap:14px; min-height:92px; padding:14px 16px; border-radius:13px; border:1px solid rgba(107,78,57,.16); background:rgba(255,255,255,.28); }
+.product-icon { width:52px; height:52px; display:grid; place-items:center; border-radius:50%; background:#dfcdb1; font-size:28px; box-shadow:inset 0 0 0 2px rgba(100,64,42,.08); }
+.menu-grid h3 { margin:0 0 5px; font-size:22px; }
+.menu-grid p { margin:0; font-size:14px; line-height:1.35; color:#806653; }
+.menu-grid strong { min-width:82px; text-align:right; font-size:18px; }
+footer { position:fixed; bottom:0; left:0; right:0; height:58px; display:grid; place-items:center; color:#f5e5cf; background:#4a2c21; letter-spacing:.04em; }
+@media (max-width:760px) { .menu-header { padding:18px 12px; }.mini-cup { display:none; }.menu-header h1 { font-size:48px; }.back-button { position:static; }.menu-grid { grid-template-columns:1fr; }.menu-page { width:calc(100% - 20px); }.menu-grid article { grid-template-columns:46px 1fr auto; } }
